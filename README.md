@@ -2,6 +2,9 @@
 
 This is a Sign Language Recognition service utilizing a deep learning model with Long Short-Term Memory to perform sign language recognition. The service was developed as a part of a bachelor project at Aalborg University. 
 
+![alt text](https://github.com/martinloenne/sign-language-recognition-service/blob/master/frontend.png)
+
+
 ## Requirements
 
 - Python 3.7
@@ -52,8 +55,14 @@ This is a Sign Language Recognition service utilizing a deep learning model with
 
 When OpenPose is successfully installed, you can either use the existing model trained on our dataset, or you can choose to make your own dataset and train a model on this instead.
 
+![alt text](https://github.com/martinloenne/sign-language-recognition-service/blob/master/confusion_matrix_normalized.png)
+
 ### Using the service
 A singular endpoint *'/recognize'* has been created in order to perform recognition, which allows for POST requests to be made. The endpoint expects a sequence of base64 images, which will get converted into a suitable format recognizable by the classifier. 
+
+![alt text](https://github.com/martinloenne/sign-language-recognition-service/blob/master/diagram.png)
+
+![alt text](https://github.com/martinloenne/sign-language-recognition-service/blob/master/model.png)
 
 ### Creating a custom dataset
 In order to create a custom dataset, you can access the file **create_dataset.py** and change the following constant:
